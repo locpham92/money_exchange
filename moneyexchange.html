@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Exchange</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="amount">
+        </td>
+        <td>
+            <select id="from">
+                <option value="1">VND</option>
+                <option value="24000">USD</option>
+                <option value="25000">EUR</option>
+                <option value="200">JPY</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="1">VND</option>
+                <option value="24000">USD</option>
+                <option value="25000">EUR</option>
+                <option value="200">JPY</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" onclick="convert()">Convert</button>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script src="demo.js"></script>
+</body>
+</html>
